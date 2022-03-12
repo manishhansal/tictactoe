@@ -1,0 +1,39 @@
+#main {
+    display: flex;
+    margin-left: 10%;
+}
+
+#play1, #play2 {
+    width: 20vw;
+    height: 15vh;
+    border: 1px solid #cecece;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 1%;
+    font-size: 70px;
+    font-weight: 900;
+    margin-top: 19%;
+    border-radius: 15px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-gap: 20px;
+}
+
+#container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cecece;
+    font-size: 70px;
+    font-weight: 900;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
