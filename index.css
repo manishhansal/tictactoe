@@ -1,6 +1,6 @@
 #main {
     display: flex;
-    margin-left: 10%;
+    margin-left: 30%;
 }
 
 #play1, #play2 {
@@ -10,10 +10,11 @@
     text-align: center;
     box-sizing: border-box;
     padding-top: 1%;
-    font-size: 70px;
+    font-size: 30px;
     font-weight: 900;
     margin-top: 19%;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 
 #container {
@@ -32,8 +33,18 @@
     align-items: center;
     justify-content: center;
     border: 1px solid #cecece;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 900;
     box-sizing: border-box;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+#playAgain {
+    display: none;
+    margin-left: 48%;
 }
