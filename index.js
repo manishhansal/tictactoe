@@ -247,3 +247,11 @@ function gameOver() {
 function playAgain() {
     window.location = "index.html";
 }
+
+
+// for menu button
+$(function() {
+    $(".material-icons").click(function() {
+        $(".leftNavbar").slideToggle(500);
+    });
+})
