@@ -96,6 +96,7 @@ h1 {
 #playAgain {
     display: none;
     margin-left: 48%;
+    cursor: pointer;
 }
 
 
@@ -132,6 +133,10 @@ h1 {
 
     #container div {
         font-size: 20px;
+    }
+
+    #playAgain {
+        margin-left: 38%;
     }
 
 }

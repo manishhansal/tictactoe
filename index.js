@@ -12,137 +12,172 @@ let div9 = document.getElementById("div9");
 let g = new Array(9).fill("M");
 console.log(g);
 
-let a = [];
 
 let stk = [];
 console.log(stk)
 function displayX(a) {
 
     if(a===1 && stk[stk.length-1]!=="X") {
-        div1.innerText = "X";
-        stk.push("X");
-        g[0] = "X";
 
+        if(div1.innerText === ""){
+            div1.innerText = "X";
+            stk.push("X");
+            g[0] = "X";
+        }
         gameOver()
     }
     else if(a===2 && stk[stk.length-1]!=="X"){
-        div2.innerText = "X";
-        stk.push("X");
-        g[1] = "X";
 
+        if(div2.innerText === ""){
+            div2.innerText = "X";
+            stk.push("X");
+            g[1] = "X";
+        }
         gameOver()
     }
     else if(a===3 && stk[stk.length-1]!=="X"){
-        div3.innerText = "X";
-        stk.push("X");
-        g[2] = "X";
 
+        if(div3.innerText === ""){
+            div3.innerText = "X";
+            stk.push("X");
+            g[2] = "X";
+        }
         gameOver()
     }
     else if(a===4 && stk[stk.length-1]!=="X"){
-        div4.innerText = "X";
-        stk.push("X");
-        g[3] = "X";
 
+        if(div4.innerText === ""){
+            div4.innerText = "X";
+            stk.push("X");
+            g[3] = "X";
+        }
         gameOver()
     }
     else if(a===5 && stk[stk.length-1]!=="X"){
-        div5.innerText = "X";
-        stk.push("X");
-        g[4] = "X";
 
+        if(div5.innerText === ""){
+            div5.innerText = "X";
+            stk.push("X");
+            g[4] = "X";
+        }
         gameOver()
     }
     else if(a===6 && stk[stk.length-1]!=="X"){
-        div6.innerText = "X";
-        stk.push("X");
-        g[5] = "X";
 
+        if(div6.innerText === ""){
+            div6.innerText = "X";
+            stk.push("X");
+            g[5] = "X";
+        }
         gameOver()
     }
     else if(a===7 && stk[stk.length-1]!=="X"){
-        div7.innerText = "X";
-        stk.push("X");
-        g[6] = "X";
 
+        if(div7.innerText === ""){
+            div7.innerText = "X";
+            stk.push("X");
+            g[6] = "X";
+        }
         gameOver()
     }
     else if(a===8 && stk[stk.length-1]!=="X"){
-        div8.innerText = "X";
-        stk.push("X");
-        g[7] = "X";
 
+        if(div8.innerText === ""){
+            div8.innerText = "X";
+            stk.push("X");
+            g[7] = "X";
+        }
         gameOver()
     }
     else if(a===9 && stk[stk.length-1]!=="X"){
-        div9.innerText = "X";
-        stk.push("X");
-        g[8] = "X";
 
+        if(div9.innerText === ""){
+            div9.innerText = "X";
+            stk.push("X");
+            g[8] = "X";
+        }
         gameOver()
     }
 
     else if(a===1 && stk[stk.length-1]!=="O") {
-        div1.innerText = "O";
-        stk.push("O");
-        g[0] = "O";
 
+        if(div1.innerText === ""){
+            div1.innerText = "O";
+            stk.push("O");
+            g[0] = "O";
+        }
         gameOver()
     }
     else if(a===2 && stk[stk.length-1]!=="O"){
-        div2.innerText = "O";
-        stk.push("O");
-        g[1] = "O";
 
+        if(div2.innerText === ""){
+            div2.innerText = "O";
+            stk.push("O");
+            g[1] = "O";
+        }
         gameOver()
     }
     else if(a===3 && stk[stk.length-1]!=="O"){
-        div3.innerText = "O";
-        stk.push("O");
-        g[2] = "O";
 
+        if(div3.innerText === ""){
+            div3.innerText = "O";
+            stk.push("O");
+            g[2] = "O";
+        }
         gameOver()
     }
     else if(a===4 && stk[stk.length-1]!=="O"){
-        div4.innerText = "O";
-        stk.push("O");
-        g[3] = "O";
 
+        if(div4.innerText === ""){
+            div4.innerText = "O";
+            stk.push("O");
+            g[3] = "O";
+        }
         gameOver()
     }
     else if(a===5 && stk[stk.length-1]!=="O"){
-        div5.innerText = "O";
-        stk.push("O");
-        g[4] = "O";
 
+        if(div5.innerText === ""){
+            div5.innerText = "O";
+            stk.push("O");
+            g[4] = "O";
+        }
         gameOver()
     }
     else if(a===6 && stk[stk.length-1]!=="O"){
-        div6.innerText = "O";
-        stk.push("O");
-        g[5] = "O";
 
+        if(div6.innerText === ""){
+            div6.innerText = "O";
+            stk.push("O");
+            g[5] = "O";
+        }
         gameOver()
     }
     else if(a===7 && stk[stk.length-1]!=="O"){
-        div7.innerText = "O";
-        stk.push("O");
-        g[6] = "O";
 
+        if(div7.innerText === ""){
+            div7.innerText = "O";
+            stk.push("O");
+            g[6] = "O";
+        }
         gameOver()
     }
     else if(a===8 && stk[stk.length-1]!=="O"){
-        div8.innerText = "O";
-        stk.push("O");
-        g[7] = "O";
 
+        if(div8.innerText === ""){
+            div8.innerText = "O";
+            stk.push("O");
+            g[7] = "O";
+        }
         gameOver()
     }
     else if(a===9 && stk[stk.length-1]!=="O"){
-        div9.innerText = "O";
-        stk.push("O");
-        g[8] = "O";
 
+        if(div9.innerText === ""){
+            div9.innerText = "O";
+            stk.push("O");
+            g[8] = "O";
+        }
         gameOver()
     }
 };
