@@ -10,7 +10,9 @@ let div9 = document.getElementById("div9");
 
 
 let g = new Array(9).fill("M");
-console.log(g)
+console.log(g);
+
+let a = [];
 
 let stk = [];
 console.log(stk)
@@ -235,6 +237,12 @@ function gameOver() {
         document.getElementById("container").style.display = "none";
     }
     else if(g[2]==="O" && g[5]==="O" && g[8]==="O"){
+        console.log("O WON");
+        winner.textContent = "Congrats! You won, Abhishek.";
+        document.getElementById("playAgain").style.display = "block";
+        document.getElementById("container").style.display = "none";
+    }
+    else if(g[2]==="O" && g[4]==="O" && g[6]==="O"){
         console.log("O WON");
         winner.textContent = "Congrats! You won, Abhishek.";
         document.getElementById("playAgain").style.display = "block";
