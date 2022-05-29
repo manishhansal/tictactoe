@@ -24,7 +24,8 @@ function displayX(a) {
             stk.push("X");
             g[0] = "X";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===2 && stk[stk.length-1]!=="X"){
 
@@ -33,7 +34,8 @@ function displayX(a) {
             stk.push("X");
             g[1] = "X";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===3 && stk[stk.length-1]!=="X"){
 
@@ -42,7 +44,8 @@ function displayX(a) {
             stk.push("X");
             g[2] = "X";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===4 && stk[stk.length-1]!=="X"){
 
@@ -51,7 +54,8 @@ function displayX(a) {
             stk.push("X");
             g[3] = "X";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===5 && stk[stk.length-1]!=="X"){
 
@@ -60,7 +64,8 @@ function displayX(a) {
             stk.push("X");
             g[4] = "X";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===6 && stk[stk.length-1]!=="X"){
 
@@ -69,7 +74,8 @@ function displayX(a) {
             stk.push("X");
             g[5] = "X";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===7 && stk[stk.length-1]!=="X"){
 
@@ -78,7 +84,8 @@ function displayX(a) {
             stk.push("X");
             g[6] = "X";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===8 && stk[stk.length-1]!=="X"){
 
@@ -87,7 +94,8 @@ function displayX(a) {
             stk.push("X");
             g[7] = "X";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===9 && stk[stk.length-1]!=="X"){
 
@@ -96,7 +104,8 @@ function displayX(a) {
             stk.push("X");
             g[8] = "X";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
 
     else if(a===1 && stk[stk.length-1]!=="O") {
@@ -106,7 +115,8 @@ function displayX(a) {
             stk.push("O");
             g[0] = "O";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===2 && stk[stk.length-1]!=="O"){
 
@@ -115,7 +125,8 @@ function displayX(a) {
             stk.push("O");
             g[1] = "O";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===3 && stk[stk.length-1]!=="O"){
 
@@ -124,7 +135,8 @@ function displayX(a) {
             stk.push("O");
             g[2] = "O";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===4 && stk[stk.length-1]!=="O"){
 
@@ -133,7 +145,8 @@ function displayX(a) {
             stk.push("O");
             g[3] = "O";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===5 && stk[stk.length-1]!=="O"){
 
@@ -142,7 +155,8 @@ function displayX(a) {
             stk.push("O");
             g[4] = "O";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===6 && stk[stk.length-1]!=="O"){
 
@@ -151,7 +165,8 @@ function displayX(a) {
             stk.push("O");
             g[5] = "O";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===7 && stk[stk.length-1]!=="O"){
 
@@ -160,7 +175,8 @@ function displayX(a) {
             stk.push("O");
             g[6] = "O";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===8 && stk[stk.length-1]!=="O"){
 
@@ -169,7 +185,8 @@ function displayX(a) {
             stk.push("O");
             g[7] = "O";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
     else if(a===9 && stk[stk.length-1]!=="O"){
 
@@ -178,7 +195,8 @@ function displayX(a) {
             stk.push("O");
             g[8] = "O";
         }
-        gameOver()
+        // gameOver()
+        setTimeout(gameOver, 3000)
     }
 };
 
@@ -188,49 +206,49 @@ function gameOver() {
         console.log("X WON");
         winner.textContent = "Congrats! You won, Manish.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[0]==="X" && g[1]==="X" && g[2]==="X"){
         console.log("X WON");
         winner.textContent = "Congrats! You won, Manish.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[3]==="X" && g[4]==="X" && g[5]==="X"){
         console.log("X WON");
         winner.textContent = "Congrats! You won, Manish.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[6]==="X" && g[7]==="X" && g[8]==="X"){
         console.log("X WON");
         winner.textContent = "Congrats! You won, Manish.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[0]==="X" && g[3]==="X" && g[6]==="X"){
         console.log("X WON");
         winner.textContent = "Congrats! You won, Manish.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[2]==="X" && g[5]==="X" && g[8]==="X"){
         console.log("X WON");
         winner.textContent = "Congrats! You won, Manish.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[2]==="X" && g[4]==="X" && g[6]==="X"){
         console.log("X WON");
         winner.textContent = "Congrats! You won, Manish.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[1]==="X" && g[4]==="X" && g[7]==="X"){
         console.log("X WON");
         winner.textContent = "Congrats! You won, Manish.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
 
 
@@ -239,49 +257,55 @@ function gameOver() {
         console.log("O WON");
         winner.textContent = "Congrats! You won, Abhishek.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[0]==="O" && g[1]==="O" && g[2]==="O"){
         console.log("O WON");
         winner.textContent = "Congrats! You won, Abhishek.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[3]==="O" && g[4]==="O" && g[5]==="O"){
         console.log("O WON");
         winner.textContent = "Congrats! You won, Abhishek.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[6]==="O" && g[7]==="O" && g[8]==="O"){
         console.log("O WON");
         winner.textContent = "Congrats! You won, Abhishek.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[0]==="O" && g[3]==="O" && g[6]==="O"){
         console.log("O WON");
         winner.textContent = "Congrats! You won, Abhishek.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[1]==="O" && g[4]==="O" && g[7]==="O"){
         console.log("O WON");
         winner.textContent = "Congrats! You won, Abhishek.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[2]==="O" && g[5]==="O" && g[8]==="O"){
         console.log("O WON");
         winner.textContent = "Congrats! You won, Abhishek.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
     }
     else if(g[2]==="O" && g[4]==="O" && g[6]==="O"){
         console.log("O WON");
         winner.textContent = "Congrats! You won, Abhishek.";
         document.getElementById("playAgain").style.display = "block";
-        document.getElementById("container").style.display = "none";
+        // document.getElementById("container").style.display = "none";
+    }
+    else {
+        if (winner.textContent == "" && div1.innerText != "" && div2.innerText != "" && div3.innerText != "" && div4.innerText != "" && div5.innerText != "" && div6.innerText != "" && div7.innerText != "" && div8.innerText != "" && div9.innerText != "") {
+            winner.textContent = "Match Draw";
+            document.getElementById("playAgain").style.display = "block";
+        }
     }
     
 }
