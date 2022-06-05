@@ -1,71 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <!-- Importing jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-</head>
-<body>
 
+  </head>
+  <body>
     <!-- Navbar -->
     <div id="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="./t3_Game-removebg-preview.png" alt="Logo"></a>
-        </div>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="./t3_Game-removebg-preview.png" alt="Logo"
+        /></a>
+      </div>
 
-        <div class="menu">
-            <i class="material-icons">menu</i>
-        </div>
+      <div class="menu">
+        <i class="material-icons">menu</i>
+      </div>
 
-        <div class="leftNavbar">
-            <div><a href="#">Sign In</a></div>
-            <div><a href="#">Sign Up</a></div>
-            <div><a href="#">Contact Me</a></div>
-            <div><a href="#">About Me</a></div>
-        </div>
-
+      <div class="leftNavbar">
+        <div><a href="#">Sign In</a></div>
+        <div><a href="#">Sign Up</a></div>
+        <div><a href="#">Contact Me</a></div>
+        <div><a href="#">About Me</a></div>
+      </div>
     </div>
 
+    <input type="text" placeholder="Player1" class="player1-input" />
+    <input type="text" placeholder="player2" class="player2-input" />
     
+
     <h1 id="winner"></h1>
     <div id="playAgain">
-        <button onclick="playAgain()">Play Again</button>
+      <button onclick="playAgain()">Play Again</button>
     </div>
-    
+
     <div id="main">
+      <!-- <div id="play1">Player1</div> -->
 
-        <!-- <div id="play1">Player1</div> -->
+      <div id="container">
+        <div
+          id="div1"
+          onclick="displayX(1)"
+          style="
+            border-right: 2px solid rgb(14, 10, 241);
+            border-bottom: 2px solid rgb(14, 10, 241);
+          "
+        ></div>
+        <div
+          id="div2"
+          onclick="displayX(2)"
+          style="border-bottom: 2px solid rgb(14, 10, 241)"
+        ></div>
+        <div
+          id="div3"
+          onclick="displayX(3)"
+          style="
+            border-left: 2px solid rgb(14, 10, 241);
+            border-bottom: 2px solid rgb(14, 10, 241);
+          "
+        ></div>
+        <div
+          id="div4"
+          onclick="displayX(4)"
+          style="
+            border-right: 2px solid rgb(14, 10, 241);
+            border-bottom: 2px solid rgb(14, 10, 241);
+          "
+        ></div>
+        <div
+          id="div5"
+          onclick="displayX(5)"
+          style="border-bottom: 2px solid rgb(14, 10, 241)"
+        ></div>
+        <div
+          id="div6"
+          onclick="displayX(6)"
+          style="
+            border-left: 2px solid rgb(14, 10, 241);
+            border-bottom: 2px solid rgb(14, 10, 241);
+          "
+        ></div>
+        <div
+          id="div7"
+          onclick="displayX(7)"
+          style="border-right: 2px solid rgb(14, 10, 241)"
+        ></div>
+        <div id="div8" onclick="displayX(8)"></div>
+        <div
+          id="div9"
+          onclick="displayX(9)"
+          style="border-left: 2px solid rgb(14, 10, 241)"
+        ></div>
+      </div>
 
-        <div id="container">
-
-            
-
-            <div id="div1" onclick="displayX(1)" style="border-right:2px solid rgb(14, 10, 241); border-bottom: 2px solid rgb(14, 10, 241)"></div>
-            <div id="div2" onclick="displayX(2)" style="border-bottom: 2px solid rgb(14, 10, 241)"></div>
-            <div id="div3" onclick="displayX(3)" style="border-left:2px solid rgb(14, 10, 241); border-bottom: 2px solid rgb(14, 10, 241)"></div>
-            <div id="div4" onclick="displayX(4)" style="border-right:2px solid rgb(14, 10, 241); border-bottom: 2px solid rgb(14, 10, 241)"></div>
-            <div id="div5" onclick="displayX(5)" style="border-bottom: 2px solid rgb(14, 10, 241)"></div>
-            <div id="div6" onclick="displayX(6)" style="border-left:2px solid rgb(14, 10, 241); border-bottom: 2px solid rgb(14, 10, 241)"></div>
-            <div id="div7" onclick="displayX(7)" style="border-right:2px solid rgb(14, 10, 241)"></div>
-            <div id="div8" onclick="displayX(8)" ></div>
-            <div id="div9" onclick="displayX(9)" style="border-left:2px solid rgb(14, 10, 241)"></div>
-
-        </div>
-
-        <!-- <div id="play2">Player2</div> -->
-
+      <!-- <div id="play2">Player2</div> -->
     </div>
-</body>
+  </body>
 </html>
 <script src="index.js"></script>
